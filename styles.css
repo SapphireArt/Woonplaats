@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative;
+    height: 300px;
+    background-image: url('https://www.revital.nl/afbeeldingen/site.2011/provinciale-pagina/zuid-holland/Krimpen.ad.lek-centrum_01.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 100px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.links {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.rechts {
+    flex: 9;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links li {
+    margin-bottom: 10px;
+}
+
+.rechts .article {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.rechts .article img {
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.rechts .article div {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .links {
+        margin-right: 0;
+    }
+
+    .rechts {
+        margin-top: 20px;
+    }
+
+    .rechts .article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rechts .article img {
+        margin: 10px 0;
+    }
+}
